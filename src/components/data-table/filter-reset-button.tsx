@@ -12,7 +12,7 @@ interface DataTableFilterResetButtonProps<TData>
   table: Table<TData>;
 }
 
-export function DataTableFilterResetButton<TData>({
+export function FilterResetButton<TData>({
   table,
   value: _value,
 }: DataTableFilterResetButtonProps<TData>) {
