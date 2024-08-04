@@ -7,14 +7,14 @@ export interface Option {
   value: string | boolean;
 }
 
-export interface DataTableFilterField<TData> {
+export interface FilterField<TData> {
   label: string;
   value: keyof TData;
   component?: (props: Option) => JSX.Element | null;
   options?: Option[];
 }
 
-export interface DataTableFilterOption<TData> {
+export interface FilterOption<TData> {
   id: string;
   label: string;
   value: keyof TData;
