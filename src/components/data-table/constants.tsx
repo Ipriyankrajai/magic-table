@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import type { Schema } from "./schema";
-import type { DataTableFilterField, Option } from "./types";
+import type { FilterField, Option } from "./types";
 import { z } from "zod";
 
 export const tagsColor = {
@@ -163,4 +163,4 @@ export const filterFields = [
       { label: "History", value: "history" },
     ],
   },
-] satisfies DataTableFilterField<Schema>[];
+] satisfies FilterField<Schema>[];
