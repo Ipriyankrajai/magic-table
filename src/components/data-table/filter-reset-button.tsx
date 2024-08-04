@@ -3,12 +3,11 @@
 import useUpdateSearchParams from "@/hooks/use-update-search-params";
 import type { Table } from "@tanstack/react-table";
 import { useRouter } from "next/navigation";
-import type { DataTableFilterField } from "./types";
+import type { FilterField } from "./types";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
-interface DataTableFilterResetButtonProps<TData>
-  extends DataTableFilterField<TData> {
+interface DataTableFilterResetButtonProps<TData> extends FilterField<TData> {
   table: Table<TData>;
 }
 
