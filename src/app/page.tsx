@@ -16,7 +16,8 @@ export default function Page({
     console.log(search.error);
     return null;
   }
-
+console.log("search",search);
+  
   return (
     <DataTable
       columns={columns}
